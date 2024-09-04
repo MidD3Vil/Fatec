@@ -3,7 +3,7 @@ Perguntas:
 https://www.dropbox.com/scl/fi/prnewjtl2578n36abvula/Lista-de-Exerc-cios-II-Python-para-Zumbis.pdf?rlkey=j5z4x5kjmsefhmwnln1hnjzv5&e=4&dl=0
 '''
 
-def ex1():
+def l2_ex1():
     L1 = float(input('Insira o valor do PRIMEIRO lado: '))
     L2 = float(input('Insira o valor do SEGUNDO lado: '))
     L3 = float(input('Insira o valor do TERCEIRO lado: '))
@@ -21,7 +21,7 @@ def ex1():
     
     
     
-def ex2():
+def l2_ex2():
     ano = int(input('Digite um ano: '))
     
     if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
@@ -31,7 +31,7 @@ def ex2():
     
     
     
-def ex3():
+def l2_ex3():
     kg = float(input('Quantos kg de peixe: '))
     
     if kg > 50:
@@ -41,7 +41,7 @@ def ex3():
     
     
     
-def ex4():
+def l2_ex4():
     n1 = float(input('Digíte o Primeiro número: '))
     n2 = float(input('Digíte o Segundo número: '))
     n3 = float(input('Digíte o Terceiro número: '))
@@ -55,7 +55,7 @@ def ex4():
     
     
     
-def ex5():
+def l2_ex5():
     n1 = float(input('Digíte o Primeiro número: '))
     n2 = float(input('Digíte o Segundo número: '))
     n3 = float(input('Digíte o Terceiro número: '))
@@ -76,7 +76,7 @@ def ex5():
     
     
     
-def ex5_2()
+def l2_ex5_2()
     n1 = float(input('Digíte o Primeiro número: '))
     n2 = float(input('Digíte o Segundo número: '))
     n3 = float(input('Digíte o Terceiro número: '))
@@ -98,7 +98,7 @@ def ex5_2()
     
     
     
-def ex6():
+def l2_ex6():
     qnt = float(input('Quanto você ganha por hora? '))
     hr = int(input('Quantas horas você trabalha por mês? '))
     
@@ -110,7 +110,7 @@ def ex6():
     
     
     
-def ex7():
+def l2_ex7():
     tam = float(input('Quantos m²: '))
     
     if tam % 54 == 0:

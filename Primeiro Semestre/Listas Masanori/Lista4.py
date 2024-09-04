@@ -3,7 +3,7 @@ Exercícios:
 https://www.dropbox.com/scl/fi/vigm6n56wdr9qfua3hdn1/Lista-de-Exerc-cios-IV-Python-para-Zumbis.pdf?rlkey=1nce6pkdpsrik2qsrz3achhaq&e=1&dl=0
 '''
 
-def ex1():
+def l4_ex1():
   from random import randint
   lista = [randint(1, 100) for _ in range(10)]
   maior = lista[0]
@@ -16,7 +16,7 @@ def ex1():
   print(", ".join(str(x) for x in lista))
   print(f'\nCriei uma lisa com 10 números aleatórios entre 0 e 100, sendo: \n Maior > {maior}\n Menor > {menor}')
 
-def ex2():
+def l4_ex2():
   from random import randint
   lista = [randint(1, 100) for _ in range(20)]
   par, impar = [], []
@@ -27,7 +27,7 @@ def ex2():
       impar.append(num)
   print(f'Lista: {", ".join(str(x) for x in lista)}\n\nPares: {", ".join(str(x) for x in par)}\n\nImpares: {", ".join(str(x) for x in impar)}')
 
-def ex3():
+def l4_ex3():
   from random import randint
   v1 = [randint(1, 100) for _ in range(10)]
   v2 = [randint(1, 100) for _ in range(10)]
@@ -38,7 +38,7 @@ def ex3():
     v3.append(v2[x])
   print(f'Lista 1: {", ".join(str(x) for x in v1)}\n\nLista 2: {", ".join(str(x) for x in v2)}\n\nLista 3: {", ".join(str(x) for x in v3)}')
 
-def ex4():
+def l4_ex4():
   from re import sub
   texto = """The Python Software Foundation and the global Python
   community welcome and encourage participation by everyone. Our community is based on
@@ -54,7 +54,7 @@ def ex4():
       lista.append(palavra)
   print(f'Lista de palavras que começam ou terminam com alguma letra de "Python":\n\n{", ".join(str(x) for x in lista)}')
   
-def ex5():
+def l4_ex5():
   from re import sub
   texto = """The Python Software Foundation and the global Python
   community welcome and encourage participation by everyone. Our community is based on

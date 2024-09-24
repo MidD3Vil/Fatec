@@ -1,0 +1,76 @@
+.pagina01{
+    background-image: url(img/background-image.png);  
+    padding-bottom: 200px;
+}
+.pagina02{
+    background-image: url(img/background-image2.png);
+    padding-bottom: 200px;
+}
+.pagina03 {
+    background-image: url(img/background-image2.png);
+    padding-bottom: 200px;
+}
+.Capa{margin: 0 170px   }
+
+h1{margin: 20px 170px 20px;font-size: 30px;}
+hr{margin: 20px 170px 20px;}
+h2{margin: 20px 170px 20px;font-size: 30px;}
+ol{margin: 20px 170px 20px;}
+h3{margin: 20px 170px 20px;font-size: 30px;}
+p{
+    margin: 0 170px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    margin: 0 170px;
+}
+
+.header a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #330085;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header a:hover{
+    color: rgb(255, 0, 0);}
+
+.footer{
+    text-align: center;
+    padding-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 170px 20px;
+    width: 10%;
+}
+
+label{margin-top: 5px;}
+
+input[type="text"]{
+    height: 20px;
+    width: 180px;
+}
+
+#descricao{
+    height: 45px;
+    resize: none;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(65, 65, 128);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+button:hover{background-color: rgb(255, 0, 0);}

@@ -25,6 +25,7 @@ p{
 .header-container{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     padding: 11px;
     margin: 0 170px;
@@ -74,3 +75,11 @@ button{
     width: 80px;
 }
 button:hover{background-color: rgb(255, 0, 0);}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  ;
+}

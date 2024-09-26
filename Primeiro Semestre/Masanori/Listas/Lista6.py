@@ -18,7 +18,12 @@ def dormir(dia_semana, feriado):
 # temos problemas quando ambos estão sorrindo ou ambos não estão sorrindo
 # retorne True quando houver problemas
 def alunos_problema(a_sorri, b_sorri):
-  return 
+  if a_sorri == True and b_sorri == True:
+    return True
+  elif a_sorri == False and b_sorri == False:
+    return True
+  else:
+    return False
 
 # C. soma_dobro
 # dados dois números inteiros retorna sua soma
@@ -26,7 +31,10 @@ def alunos_problema(a_sorri, b_sorri):
 # soma_dobro(1, 2) -> 3
 # soma_dobro(2, 2) -> 8
 def soma_dobro(a, b):
-  return
+  if a != b:
+    return a + b
+  else:
+    return 2 * (a + b)
 
 # D. diff21
 # dado um inteiro n retorna a diferença absoluta entre n e 21
@@ -35,7 +43,10 @@ def soma_dobro(a, b):
 # diff21(25) -> 8
 # dica: abs(x) retorna o valor absoluto de x
 def diff21(n):
-  return
+  if n <= 21:
+    return abs(21 - n)
+  else:
+    return abs(2 * (n - 21))
 
 # E. papagaio
 # temos um papagaio que fala alto
@@ -43,13 +54,21 @@ def diff21(n):
 # temos problemas se o papagaio estiver falando
 # antes da 7 ou depois das 20
 def papagaio(falando, hora):
-  return
+  if falando == True and hora < 7 or hora > 20:
+    return True
+  else:
+    return False
 
 # F. dez
 # dados dois inteiros a e b
 # retorna True se um dos dois é 10 ou a soma é 10
 def dez(a, b):
-  return
+  if a == 10 or b == 10:
+    return True
+  elif a + b == 10:
+    return True
+  else:
+    return False
 
 # G. dista10
 # seja um inteiro n
@@ -59,7 +78,10 @@ def dez(a, b):
 # dista10(90) -> True
 # dista10(89) -> False
 def dista10(n):
-  return
+  if abs(n - 100) <= 10 or abs(n - 200) <= 10:
+    return True
+  else:
+    return False
 
 # H. apaga
 # seja uma string s e um inteiro n
@@ -67,7 +89,7 @@ def dista10(n):
 # apaga('kitten', 1) -> 'ktten'
 # apaga('kitten', 4) -> 'kittn'
 def apaga(s, n):
-  return 
+  return s[:n] + s[n + 1:]
 
 # I. troca
 # seja uma string s
@@ -77,7 +99,11 @@ def apaga(s, n):
 # troca('a') -> 'a'
 # troca('ab') -> 'ba'
 def troca(s):
-  return 
+  if len(s) <= 1:
+    return s
+  else:
+    s = s[-1] + s[1:-1] + s[0]
+    return s
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
@@ -88,21 +114,21 @@ def test(obtido, esperado):
     prefixo = ' Ainda não'
   print ('%s obtido: %s esperado: %s'
          % (prefixo, repr(obtido), repr(esperado)))
-﻿
+
 def main():
   print ('Oba! Hoje vou ficar dormindo!')
   test(dormir(False, False), True)
   test(dormir(True, False), False)
   test(dormir(False, True), True)
   test(dormir(True, True), True)
-﻿
+
   print ()
   print ('Alunos problema')
   test(alunos_problema(True, True), True)
   test(alunos_problema(False, False), True)
   test(alunos_problema(True, False), False)
   test(alunos_problema(False, True), False)
-﻿
+
   print ()
   print ('Soma dobro')
   test(soma_dobro(1, 2), 3)
@@ -111,7 +137,7 @@ def main():
   test(soma_dobro(-1, 0), -1)
   test(soma_dobro(0, 0), 0)
   test(soma_dobro(0, 1), 1)
-﻿
+
   print ()
   print ('Diff21')
   test(diff21(19), 2)
@@ -120,7 +146,7 @@ def main():
   test(diff21(22), 2)
   test(diff21(25), 8)
   test(diff21(30), 18)
-﻿
+
   print ()
   print ('Papagaio')
   test(papagaio(True, 6), True)
@@ -130,7 +156,7 @@ def main():
   test(papagaio(False, 21), False)
   test(papagaio(True, 23), True)
   test(papagaio(True, 20), False)
-﻿
+
   print ()
   print ('Dez')
   test(dez(9, 10), True)
@@ -142,7 +168,7 @@ def main():
   test(dez(8, 3), False)
   test(dez(10, 42), True)
   test(dez(12, -2), True)
-﻿
+
   print ()
   print ('Dista 10')
   test(dista10(93), True)
@@ -160,7 +186,7 @@ def main():
   test(dista10(210), True)
   test(dista10(211), False)
   test(dista10(290), False)
-﻿
+
   print ()
   print ('Apaga')
   test(apaga('kitten', 1), 'ktten')
@@ -174,7 +200,7 @@ def main():
   test(apaga('code', 2), 'coe')
   test(apaga('code', 3), 'cod')
   test(apaga('chocolate', 8), 'chocolat')
-﻿
+
   print ()
   print ('Troca letras')
   test(troca('code'), 'eodc')	    

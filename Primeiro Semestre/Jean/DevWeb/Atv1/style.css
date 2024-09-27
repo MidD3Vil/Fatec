@@ -75,10 +75,14 @@ button{
 }
 button:hover{background-color: rgb(255, 0, 0);}
 
-header{
+.header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   ;
+}
+
+ol p{
+    margin-left: 0;
 }

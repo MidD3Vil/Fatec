@@ -84,5 +84,5 @@ button:hover{background-color: rgb(255, 0, 0);}
 }
 
 ol p{
-    margin-left: 0;
+    margin: 20px 170px 20px -20px;
 }

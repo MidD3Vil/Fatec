@@ -1,7 +1,7 @@
-# Fatec
+# Sobre
 <img src="https://github.com/MidD3Vil/Fatec/blob/main/fatec-logo.png">
 
-Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souza ).  Repositório apenas para atualização de trabalhos e projetos pessoais...
+**Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souza ).  Repositório apenas para atualização de trabalhos e projetos pessoais.**
 
 ## Tecnologias Estudadas ( Até o momento )
 

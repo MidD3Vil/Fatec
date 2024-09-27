@@ -8,8 +8,11 @@ Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souz
 
 ### Linguagens
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" height="20"> **HTML5** - Estrutura básica da web
+
 <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" height="20"> **CSS3** - Estilização da interface
+
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" height="20"> **JavaScript** - Funcionalidade e interatividade
+
 <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" height="20"> **Python** - Projetos beckend
 
 ### Cursos

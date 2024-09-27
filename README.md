@@ -6,16 +6,15 @@ Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souz
 
 ## Tecnologias Estudadas ( Até o momento )
 
+### Linguagens
 - **HTML5** - Estrutura básica da web
 - **CSS3** - Estilização da interface
 - **JavaScript** - Funcionalidade e interatividade
 - **Python** - Projetos beckend
 
-## Demonstração
-
-![Screenshot](link-para-screenshot.png) <!-- Substitua pelo link da sua captura de tela -->
-
-Uma breve explicação do que está sendo mostrado na demonstração.
+### Cursos
+- **PC Hardware and Software**
+- **NDG Linux**
 
 ## Instalação
 

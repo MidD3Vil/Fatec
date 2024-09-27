@@ -4,7 +4,7 @@
 
 Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souza ).  Repositório apenas para atualização de trabalhos e projetos pessoais...
 
-## Tecnologias Estudadas
+## Tecnologias Estudadas ( Até o momento )
 
 - **HTML5** - Estrutura básica da web
 - **CSS3** - Estilização da interface

@@ -9,8 +9,7 @@ Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souz
 - **HTML5** - Estrutura básica da web
 - **CSS3** - Estilização da interface
 - **JavaScript** - Funcionalidade e interatividade
-- **[Framework/Library]** - Descrição do que a biblioteca/framework faz
-- **[Outras Tecnologias]** - (opcional)
+- **Python** - Projetos beckend
 
 ## Demonstração
 
@@ -24,4 +23,4 @@ Para instalar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/MidD3Vil/Fatec.git

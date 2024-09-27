@@ -1,4 +1,5 @@
 # Fatec
+<img src="https://github.com/MidD3Vil/Fatec/fatec-logo.png"
 
 ![Logo do Projeto](link-para-sua-imagem.png) <!-- Substitua pelo link da sua imagem/logo -->
 

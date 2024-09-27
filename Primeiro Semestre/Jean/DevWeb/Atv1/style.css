@@ -40,9 +40,10 @@ p{
 .header a:hover{
     color: rgb(255, 0, 0);}
 
-.footer{
+footer{
     text-align: center;
     padding-top: 10px;
+    font-weight: bold;
 }
 
 form{

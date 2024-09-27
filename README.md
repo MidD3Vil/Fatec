@@ -7,7 +7,7 @@ Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souz
 ## Tecnologias Estudadas ( Até o momento )
 
 ### Linguagens
-- <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" style="width:10% height:10%">
+- <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" height="200">
 **HTML5** - Estrutura básica da web
 - **CSS3** - Estilização da interface
 - **JavaScript** - Funcionalidade e interatividade

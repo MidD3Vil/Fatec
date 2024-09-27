@@ -1,10 +1,10 @@
-# Nome do Projeto
+# Fatec
 
 ![Logo do Projeto](link-para-sua-imagem.png) <!-- Substitua pelo link da sua imagem/logo -->
 
-Uma breve descrição do seu projeto, explicando seu objetivo e principais funcionalidades.
+Retomei recentemente meus estudos na Faculdade de Tecnologia ( Centro Paula Souza ).  Repositório apenas para atualização de trabalhos e projetos pessoais...
 
-## Tecnologias Utilizadas
+## Tecnologias Estudadas
 
 - **HTML5** - Estrutura básica da web
 - **CSS3** - Estilização da interface

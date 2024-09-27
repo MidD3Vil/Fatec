@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.webp'); /* Substitua 'seu-gif.gif' pelo caminho do seu GIF */
+    background-size: cover; /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
+    background-repeat: no-repeat; /* Evita que o GIF se repita */
+}
+header {
+    background-color: rgba(34, 44, 111, 0.6); /* Fundo semitransparente */;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.8); /* Fundo semitransparente */
+    text-align: center;
+}
+nav a {
+    object-fit: content;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: rgba(87, 87, 87, 0.8); /* Fundo semitransparente */
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: rgba(51, 51, 51, 0.6); /* Fundo semitransparente */
+    color: white;
+    text-align: center;
+    padding: 6px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente para o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+}
+.botao {
+            background-color: rgba(34, 44, 111, 0.6); /* Cor de fundo */
+            border: none; /* Remove as bordas */
+            color: white; /* Cor do texto */
+            padding: 15px 32px; /* Espaçamento interno */
+            text-align: center; /* Centraliza o texto */
+            text-decoration: none; /* Remove sublinhado */
+            display: inline-block; /* Mantém o formato de botão */
+            font-size: 16px; /* Tamanho do texto */
+            margin: 10px 0; /* Margem ao redor */
+            cursor: pointer; /* Mostra o cursor de clique */
+            border-radius: 8px; /* Bordas arredondadas */
+        }
+        .botao:hover {
+            background-color: #45a049; /* Cor ao passar o mouse */
+        }

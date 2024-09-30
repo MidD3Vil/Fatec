@@ -12,7 +12,10 @@ https://www.dropbox.com/scl/fo/qbhx4eko9oq86qoxoojco/ALU8TV7Js7TN2Ef01vri6iA?dl=
 # first_last6([6, 1, 2, 3]) -> True
 # first_last6([3, 2, 1]) -> False
 def first_last6(nums): #
-  return
+    if nums[0] == 6 or nums[-1] == 6:
+        return True
+    else:
+        return False
 
 # B. same_first_last #
 # retorna True se a lista nums
@@ -23,7 +26,10 @@ def first_last6(nums): #
 # same_first_last([1, 2, 3, 1]) -> True
 # same_first_last([1, 2, 1]) -> True
 def same_first_last(nums):
-  return 
+    if len(nums) >= 1 and nums[0] == nums[-1]:
+        return True
+    else:
+        return False 
 
 # C. common_end #
 # Dada duas listas a e b verifica se os dois primeiros são
@@ -35,7 +41,10 @@ def same_first_last(nums):
 # common_end([1, 2, 3], [7, 3, 2]) -> False
 # common_end([1, 2, 3], [1, 3]) -> True
 def common_end(a, b):
-  return 
+    if a[0] == b[0] or a[-1] == b[-1]:
+        return True
+    else:
+        return False
 
 # D. maior_ponta #
 # Dada uma lista não vazia, cria uma nova lista onde todos
@@ -44,14 +53,24 @@ def common_end(a, b):
 # maior_ponta([1, 2, 3]) -> [3, 3, 3]
 # maior_ponta([1, 3, 2]) -> [2, 2, 2]
 def maior_ponta(nums):
-  return
+    maior, n = nums[0], 0
+    if nums[-1] > nums[0]:
+        maior = nums[-1]
+    for element in nums:
+        nums[n] = maior
+        n += 1
+    return nums
 
 # E. sum2 #
 # Dada uma lista de inteiros de qualquer tamanho
 # retorna a soma dos dois primeiros elementos
 # se a lista tiver menos de dois elementos, soma o que for possível
 def sum2(nums):
-  return 
+    if len(nums) >= 2:
+        soma = nums[0] + nums[1]
+    else:
+        soma = nums[0]
+    return soma
 
 # F. middle_way #
 # sejam duas listas de inteiros a e b
@@ -125,12 +144,12 @@ def alarm_clock(day, vacation):
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
 def test(obtido, esperado):
-  if obtido == esperado:
-    prefixo = ' Parabéns!'
-  else:
-    prefixo = ' Ainda não'
-  print ('%s obtido: %s esperado: %s'
-         % (prefixo, repr(obtido), repr(esperado)))
+    if obtido == esperado:
+        prefixo = ' Parabéns!'
+    else:
+        prefixo = ' Ainda não'
+    print ('%s obtido: %s esperado: %s'
+ % (prefixo, repr(obtido), repr(esperado)))
 
 def main():
   print ('First_last6')

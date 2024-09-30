@@ -167,6 +167,22 @@ def l8_ex4():
     print (txtB) # Estudar*
 
 def l8_ex5():
+    ordem = 'zmbtshjpnwlrcxkqvdgf'  
+        
+    def valor(p): # Converte
+        soma, p20 = 0, 1
+        for letra in p:
+            digito = ordem.find(letra)
+            if digito == -1:
+                return 0
+            soma += digito * p20
+            p20 *= 20
+        return soma
+
+    def is_magico(p):
+        return valor(p) % 42 == 0 and len(p) == len(set(p))
+
+    numeros_magicos_B = [p for p in txtB if is_magico(p)]
     
-    
-l8_ex4()
+    print(f"Números mágicos no Texto B: {numeros_magicos_B}")
+    print(f"Quantidade de números mágicos no Texto B: {len(numeros_magicos_B)}") # 6

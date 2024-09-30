@@ -71,4 +71,3 @@ def l4_ex5():
         lista.append(palavra)
         n += 1
   print(f'Lista com palavras com mais de 4 letras que alguma delas exise na palavra "Python:\n {lista}')
-  

@@ -1,3 +1,8 @@
+'''
+Exercícios:
+https://www.dropbox.com/scl/fo/qbhx4eko9oq86qoxoojco/ALU8TV7Js7TN2Ef01vri6iA?dl=0&e=2&preview=Lista+06+CodingBat.py&rlkey=v05xowjtnc0wxdfu5i5we694x
+'''
+
 #!/usr/bin/python -tt
 # Exercícios by Nick Parlante (CodingBat)
 

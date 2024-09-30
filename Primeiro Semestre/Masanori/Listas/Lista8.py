@@ -154,7 +154,19 @@ def l8_ex2e3():
     print(f'Existem {len(verbos)+1} verbos no texto B, sendo {len(pripessoa)+1} deles na primeira pessoa') # 85 / 75
     
 def l8_ex4():
-    odem = 'z m b t s h j p n w l r c x k q v d g f'.split()
-    txtord = txtB.sort(key=ordem)
-    print(txtord)
-l8_ex2e3()
+    ordem = 'zmbtshjpnwlrcxkqvdgf'
+    troca = 'ABCDEFGHIJKLMNOPQRST'
+    
+    def maiusculas(p):
+        resp = ''
+        for letra in p:
+            resp = resp + troca[ordem.find(letra)]
+        return resp
+ 
+    txtB.sort(key=maiusculas)
+    print (txtB) # Estudar*
+
+def l8_ex5():
+    
+    
+l8_ex4()

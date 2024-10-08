@@ -1,0 +1,249 @@
+<html><head><base href="/modulos">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Ágil Scrum - Módulos</title>
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9900;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .module {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  .module:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .module h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+  .module-content {
+    display: none;
+  }
+  .module-toggle {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .module-toggle:hover {
+    background-color: #e68a00;
+  }
+  .topics {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .topics li {
+    margin-bottom: 10px;
+  }
+  .topics li::before {
+    content: "✓";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .exam-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .exam-link:hover {
+    background-color: #004c99;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Academia Ágil Scrum</h1>
+    <p>Módulos de Aprendizado</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/modulos">Módulos</a></li>
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="modules">
+      <div class="module">
+        <h2>Módulo 1: Introdução ao Scrum</h2>
+        <button class="module-toggle">Mostrar/Ocultar Conteúdo</button>
+        <div class="module-content">
+          <ul class="topics">
+            <li>O que é Metodologia Ágil?</li>
+            <li>História e origens do Scrum</li>
+            <li>Princípios e valores do Manifesto Ágil</li>
+            <li>Visão geral do framework Scrum</li>
+          </ul>
+          <a href="/exames/modulo1" class="exam-link">Fazer a Prova do Módulo 1</a>
+        </div>
+      </div>
+
+      <div class="module">
+        <h2>Módulo 2: Papéis no Scrum</h2>
+        <button class="module-toggle">Mostrar/Ocultar Conteúdo</button>
+        <div class="module-content">
+          <ul class="topics">
+            <li>Product Owner</li>
+            <li>Scrum Master</li>
+            <li>Development Team</li>
+            <li>Stakeholders</li>
+          </ul>
+          <a href="/exames/modulo2" class="exam-link">Fazer a Prova do Módulo 2</a>
+        </div>
+      </div>
+
+      <div class="module">
+        <h2>Módulo 3: Eventos Scrum</h2>
+        <button class="module-toggle">Mostrar/Ocultar Conteúdo</button>
+        <div class="module-content">
+          <ul class="topics">
+            <li>Sprint</li>
+            <li>Sprint Planning</li>
+            <li>Daily Scrum</li>
+            <li>Sprint Review</li>
+            <li>Sprint Retrospective</li>
+          </ul>
+          <a href="/exames/modulo3" class="exam-link">Fazer a Prova do Módulo 3</a>
+        </div>
+      </div>
+
+      <div class="module">
+        <h2>Módulo 4: Artefatos Scrum</h2>
+        <button class="module-toggle">Mostrar/Ocultar Conteúdo</button>
+        <div class="module-content">
+          <ul class="topics">
+            <li>Product Backlog</li>
+            <li>Sprint Backlog</li>
+            <li>Incremento</li>
+            <li>Definition of Done</li>
+          </ul>
+          <a href="/exames/modulo4" class="exam-link">Fazer a Prova do Módulo 4</a>
+        </div>
+      </div>
+
+      <div class="module">
+        <h2>Módulo 5: Scrum na Prática</h2>
+        <button class="module-toggle">Mostrar/Ocultar Conteúdo</button>
+        <div class="module-content">
+          <ul class="topics">
+            <li>Implementando Scrum em uma organização</li>
+            <li>Desafios comuns e como superá-los</li>
+            <li>Métricas e KPIs no Scrum</li>
+            <li>Scrum em escala</li>
+          </ul>
+          <a href="/exames/modulo5" class="exam-link">Fazer a Prova do Módulo 5</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Academia Ágil Scrum. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButtons = document.querySelectorAll('.module-toggle');
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const content = this.nextElementSibling;
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+            this.textContent = 'Mostrar Conteúdo';
+          } else {
+            content.style.display = 'block';
+            this.textContent = 'Ocultar Conteúdo';
+          }
+        });
+      });
+
+      // Adiciona animação de entrada para os módulos
+      const modules = document.querySelectorAll('.module');
+      modules.forEach((module, index) => {
+        module.style.opacity = '0';
+        module.style.transform = 'translateY(20px)';
+        module.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        
+        setTimeout(() => {
+          module.style.opacity = '1';
+          module.style.transform = 'translateY(0)';
+        }, index * 200);
+      });
+    });
+  </script>
+</body>
+</html>

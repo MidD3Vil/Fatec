@@ -1,0 +1,228 @@
+<html><head><base href="/modulos/modulos/papeis">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Ágil Scrum - Papéis no Scrum</title>
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9900;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .role-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  .role-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .role-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+  }
+  .role-description {
+    margin-top: 15px;
+  }
+  .responsibilities {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .responsibilities li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+  }
+  .responsibilities li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+  }
+  .quiz-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e6f3ff;
+    border-radius: 5px;
+  }
+  .quiz-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .quiz-button:hover {
+    background-color: #e68a00;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Academia Ágil Scrum</h1>
+    <p>Módulo: Papéis no Scrum</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/modulos">Módulos</a></li>
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Papéis Fundamentais no Scrum</h2>
+    <p>Neste módulo, exploraremos os três papéis essenciais que compõem uma equipe Scrum eficaz.</p>
+    
+    <div class="role-section">
+      <h3 class="role-title">Product Owner</h3>
+      <div class="role-description">
+        <p>O Product Owner é o responsável por maximizar o valor do produto e do trabalho da equipe de desenvolvimento.</p>
+        <h4>Responsabilidades principais:</h4>
+        <ul class="responsibilities">
+          <li>Desenvolver e comunicar claramente a visão do produto</li>
+          <li>Gerenciar e priorizar o Product Backlog</li>
+          <li>Garantir que o Product Backlog seja visível, transparente e claro para todos</li>
+          <li>Otimizar o valor do trabalho que a equipe de desenvolvimento realiza</li>
+          <li>Garantir que a equipe de desenvolvimento entenda os itens do Product Backlog</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="role-section">
+      <h3 class="role-title">Scrum Master</h3>
+      <div class="role-description">
+        <p>O Scrum Master é responsável por garantir que o Scrum seja entendido e aplicado, atuando como um servo-líder para a equipe Scrum.</p>
+        <h4>Responsabilidades principais:</h4>
+        <ul class="responsibilities">
+          <li>Facilitar eventos Scrum conforme solicitado ou necessário</li>
+          <li>Treinar a equipe de desenvolvimento em autogerenciamento e interdisciplinaridade</li>
+          <li>Ajudar a equipe a criar produtos de alto valor</li>
+          <li>Remover impedimentos ao progresso da equipe de desenvolvimento</li>
+          <li>Garantir que todos os eventos Scrum ocorram e sejam positivos, produtivos e dentro do timebox</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="role-section">
+      <h3 class="role-title">Equipe de Desenvolvimento</h3>
+      <div class="role-description">
+        <p>A Equipe de Desenvolvimento consiste em profissionais que realizam o trabalho de entregar um incremento potencialmente liberável do produto ao final de cada Sprint.</p>
+        <h4>Responsabilidades principais:</h4>
+        <ul class="responsibilities">
+          <li>Entregar um incremento potencialmente liberável do produto ao final de cada Sprint</li>
+          <li>Auto-organizar-se para realizar o trabalho</li>
+          <li>Trabalhar de forma colaborativa e interdisciplinar</li>
+          <li>Participar ativamente no planejamento e refinamento do Product Backlog</li>
+          <li>Melhorar continuamente suas práticas e ferramentas</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="quiz-section">
+      <h3>Teste Seus Conhecimentos</h3>
+      <p>Pronto para verificar o que você aprendeu sobre os Papéis no Scrum?</p>
+      <a href="/modulos/papeis/quiz" class="quiz-button">Iniciar Quiz</a>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Academia Ágil Scrum. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const roleSections = document.querySelectorAll('.role-section');
+      
+      function animateSections() {
+        roleSections.forEach((section, index) => {
+          setTimeout(() => {
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
+          }, index * 200);
+        });
+      }
+
+      // Configuração inicial das seções
+      roleSections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      });
+
+      // Chamar a animação após um pequeno delay
+      setTimeout(animateSections, 100);
+
+      // Adicionar interatividade ao botão do quiz
+      const quizButton = document.querySelector('.quiz-button');
+      quizButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const confirmQuiz = confirm("Você está pronto para testar seus conhecimentos sobre os Papéis no Scrum?");
+        if (confirmQuiz) {
+          window.location.href = this.getAttribute('href');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

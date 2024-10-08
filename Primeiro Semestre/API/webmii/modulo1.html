@@ -1,0 +1,198 @@
+<html><head><base href="/modulos/modulos/introducao">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Ágil Scrum - Introdução ao Scrum</title>
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9900;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2 {
+    color: var(--primary-color);
+  }
+  .content-section {
+    margin-bottom: 30px;
+  }
+  .content-section h3 {
+    color: var(--secondary-color);
+  }
+  .quiz-section {
+    background-color: #e6f3ff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  .quiz-question {
+    margin-bottom: 15px;
+  }
+  .quiz-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .quiz-option {
+    margin: 5px 0;
+  }
+  button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  button:hover {
+    background-color: #e68a00;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Academia Ágil Scrum</h1>
+    <p>Módulo: Introdução ao Scrum</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/modulos">Módulos</a></li>
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Introdução ao Scrum</h2>
+    
+    <div class="content-section">
+      <h3>O que é Scrum?</h3>
+      <p>Scrum é um framework ágil para gerenciamento de projetos complexos, originalmente desenvolvido para projetos de software, mas que pode ser aplicado em diversos contextos. Ele se baseia em princípios de transparência, inspeção e adaptação.</p>
+    </div>
+    
+    <div class="content-section">
+      <h3>Princípios Fundamentais do Scrum</h3>
+      <ul>
+        <li>Entregas incrementais e iterativas</li>
+        <li>Priorização baseada em valor</li>
+        <li>Time-boxing</li>
+        <li>Colaboração e auto-organização da equipe</li>
+        <li>Feedback contínuo</li>
+      </ul>
+    </div>
+    
+    <div class="content-section">
+      <h3>Benefícios do Scrum</h3>
+      <p>O Scrum oferece diversos benefícios, incluindo:</p>
+      <ul>
+        <li>Maior flexibilidade e adaptabilidade</li>
+        <li>Melhor qualidade do produto</li>
+        <li>Maior satisfação do cliente</li>
+        <li>Aumento da produtividade da equipe</li>
+        <li>Redução de riscos</li>
+      </ul>
+    </div>
+    
+    <div class="quiz-section">
+      <h3>Quiz Rápido</h3>
+      <div id="quiz">
+        <div class="quiz-question">
+          <p>1. Qual das seguintes NÃO é um princípio fundamental do Scrum?</p>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" value="a"> a) Entregas incrementais</label>
+            <label class="quiz-option"><input type="radio" name="q1" value="b"> b) Priorização baseada em valor</label>
+            <label class="quiz-option"><input type="radio" name="q1" value="c"> c) Planejamento detalhado de longo prazo</label>
+            <label class="quiz-option"><input type="radio" name="q1" value="d"> d) Colaboração da equipe</label>
+          </div>
+        </div>
+        
+        <div class="quiz-question">
+          <p>2. Qual dos seguintes é um benefício do Scrum?</p>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2" value="a"> a) Documentação extensa</label>
+            <label class="quiz-option"><input type="radio" name="q2" value="b"> b) Maior flexibilidade</label>
+            <label class="quiz-option"><input type="radio" name="q2" value="c"> c) Menor envolvimento do cliente</label>
+            <label class="quiz-option"><input type="radio" name="q2" value="d"> d) Processos rígidos</label>
+          </div>
+        </div>
+      </div>
+      <button id="submit-quiz">Enviar Respostas</button>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Academia Ágil Scrum. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const quizForm = document.getElementById('quiz');
+      const submitButton = document.getElementById('submit-quiz');
+      
+      submitButton.addEventListener('click', function() {
+        let score = 0;
+        const answers = {
+          q1: 'c',
+          q2: 'b'
+        };
+        
+        for (let question in answers) {
+          const selectedAnswer = quizForm.querySelector(`input[name="${question}"]:checked`);
+          if (selectedAnswer && selectedAnswer.value === answers[question]) {
+            score++;
+          }
+        }
+        
+        alert(`Você acertou ${score} de 2 questões!`);
+      });
+    });
+  </script>
+</body>
+</html>

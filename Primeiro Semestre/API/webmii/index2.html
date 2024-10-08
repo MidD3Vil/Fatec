@@ -1,0 +1,217 @@
+<html><head><base href="/modulos">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Ágil Scrum - Módulos</title>
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9900;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .module-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .module-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  .module-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .module-description {
+    font-size: 0.9em;
+    color: #666;
+  }
+  .module-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  .module-link:hover {
+    background-color: #e68a00;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Academia Ágil Scrum</h1>
+    <p>Módulos de Aprendizagem</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/modulos">Módulos</a></li>
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Nossos Módulos de Aprendizagem</h2>
+    <p>Explore nossos módulos cuidadosamente elaborados para dominar a Metodologia Ágil Scrum.</p>
+    
+    <div class="module-grid">
+      <div class="module-card">
+        <div class="module-icon">&#128640;</div>
+        <h3 class="module-title">Introdução ao Scrum</h3>
+        <p class="module-description">Fundamentos e princípios do Scrum</p>
+        <a href="/modulos/introducao" class="module-link">Iniciar</a>
+      </div>
+      
+      <div class="module-card">
+        <div class="module-icon">&#128101;</div>
+        <h3 class="module-title">Papéis no Scrum</h3>
+        <p class="module-description">Product Owner, Scrum Master e Time de Desenvolvimento</p>
+        <a href="/modulos/papeis" class="module-link">Iniciar</a>
+      </div>
+      
+      <div class="module-card">
+        <div class="module-icon">&#128197;</div>
+        <h3 class="module-title">Eventos Scrum</h3>
+        <p class="module-description">Sprint, Daily Scrum, Review e Retrospectiva</p>
+        <a href="/modulos/eventos" class="module-link">Iniciar</a>
+      </div>
+      
+      <div class="module-card">
+        <div class="module-icon">&#128221;</div>
+        <h3 class="module-title">Artefatos Scrum</h3>
+        <p class="module-description">Product Backlog, Sprint Backlog e Incremento</p>
+        <a href="/modulos/artefatos" class="module-link">Iniciar</a>
+      </div>
+      
+      <div class="module-card">
+        <div class="module-icon">&#128736;</div>
+        <h3 class="module-title">Técnicas Ágeis</h3>
+        <p class="module-description">User Stories, Planning Poker, Kanban</p>
+        <a href="/modulos/tecnicas" class="module-link">Iniciar</a>
+      </div>
+      
+      <div class="module-card">
+        <div class="module-icon">&#128200;</div>
+        <h3 class="module-title">Métricas e KPIs</h3>
+        <p class="module-description">Medindo o sucesso em projetos Scrum</p>
+        <a href="/modulos/metricas" class="module-link">Iniciar</a>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Academia Ágil Scrum. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const moduleCards = document.querySelectorAll('.module-card');
+      
+      moduleCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+          if (e.target.classList.contains('module-link')) {
+            e.preventDefault();
+            const moduleName = this.querySelector('.module-title').textContent;
+            const confirmStart = confirm(`Você está pronto para iniciar o módulo "${moduleName}"?`);
+            if (confirmStart) {
+              window.location.href = e.target.getAttribute('href');
+            }
+          }
+        });
+      });
+
+      // Animação de entrada para os cards de módulo
+      function animateModules() {
+        moduleCards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, index * 100);
+        });
+      }
+
+      // Configuração inicial dos cards
+      moduleCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      });
+
+      // Chamar a animação após um pequeno delay
+      setTimeout(animateModules, 100);
+    });
+  </script>
+</body>
+</html>

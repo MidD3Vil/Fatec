@@ -1,0 +1,267 @@
+<html><head><base href="/sobre">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Ágil Scrum - Sobre Nós</title>
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9900;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--background-color);
+    border: 4px solid var(--secondary-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--primary-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--primary-color);
+  }
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--primary-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+  }
+  .right::after {
+    left: -16px;
+  }
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Academia Ágil Scrum</h1>
+    <p>Conheça nossa história e missão</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/modulos">Módulos</a></li>
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Sobre Nós</h2>
+    <p>A Academia Ágil Scrum nasceu da paixão por metodologias ágeis e da necessidade de compartilhar conhecimento de qualidade. Nossa missão é capacitar profissionais e organizações a adotarem práticas ágeis de maneira eficaz, promovendo uma cultura de colaboração, inovação e entrega de valor.</p>
+    
+    <h3>Nossa Equipe</h3>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Foto de Ana Silva">
+      <div>
+        <h4>Ana Silva</h4>
+        <p>Fundadora e Instrutora Principal</p>
+        <p>Certificada Scrum Master e Product Owner, com mais de 10 anos de experiência em transformações ágeis.</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Foto de Carlos Mendes">
+      <div>
+        <h4>Carlos Mendes</h4>
+        <p>Especialista em Metodologias Ágeis</p>
+        <p>Consultor ágil com vasta experiência em grandes corporações e startups.</p>
+      </div>
+    </div>
+    
+    <h3>Nossa História</h3>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="content">
+          <h4>2018</h4>
+          <p>Fundação da Academia Ágil Scrum com cursos presenciais.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h4>2019</h4>
+          <p>Expansão para treinamentos corporativos in-company.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <h4>2020</h4>
+          <p>Lançamento da plataforma de ensino online.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h4>2021</h4>
+          <p>Parceria com empresas líderes em tecnologia para programas de certificação.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <h4>2022</h4>
+          <p>Expansão internacional com cursos em inglês e espanhol.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h4>2023</h4>
+          <p>Lançamento do programa de mentoria personalizada em Agilidade.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Academia Ágil Scrum. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animação para os itens da timeline
+      const timelineItems = document.querySelectorAll('.timeline-item');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, {threshold: 0.5});
+
+      timelineItems.forEach(item => {
+        item.style.opacity = 0;
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'opacity 0.5s, transform 0.5s';
+        observer.observe(item);
+      });
+
+      // Efeito hover para membros da equipe
+      const teamMembers = document.querySelectorAll('.team-member');
+      teamMembers.forEach(member => {
+        member.addEventListener('mouseenter', function() {
+          this.style.backgroundColor = '#f0f0f0';
+          this.style.transform = 'scale(1.05)';
+          this.style.transition = 'all 0.3s ease';
+        });
+        member.addEventListener('mouseleave', function() {
+          this.style.backgroundColor = 'transparent';
+          this.style.transform = 'scale(1)';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

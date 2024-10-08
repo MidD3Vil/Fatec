@@ -1,0 +1,190 @@
+<html><head><base href="/contato">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Ágil Scrum - Contato</title>
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9900;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 150px;
+  }
+  button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background-color: #0052a3;
+  }
+  .contact-info {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: var(--primary-color);
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Academia Ágil Scrum</h1>
+    <p>Entre em contato conosco</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/modulos">Módulos</a></li>
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Entre em Contato</h2>
+    <p>Tem alguma dúvida ou sugestão? Estamos aqui para ajudar!</p>
+    
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    
+    <div class="contact-info">
+      <h3>Outras formas de contato</h3>
+      <p><i class="fas fa-envelope"></i> Email: contato@academiagilscrum.com</p>
+      <p><i class="fas fa-phone"></i> Telefone: (11) 1234-5678</p>
+      <p><i class="fas fa-map-marker-alt"></i> Endereço: Av. Paulista, 1000 - São Paulo, SP</p>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Academia Ágil Scrum. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Aqui você normalmente enviaria os dados para um servidor
+        // Como exemplo, vamos apenas exibir uma mensagem de confirmação
+        alert(`Obrigado por entrar em contato, ${name}!\n\nRecebemos sua mensagem e responderemos em breve para o email: ${email}`);
+        
+        // Limpar o formulário
+        contactForm.reset();
+      });
+    });
+  </script>
+</body>
+</html>

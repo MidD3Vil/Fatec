@@ -3,7 +3,8 @@ Exercícios:
 https://www.dropbox.com/scl/fo/qbhx4eko9oq86qoxoojco/ALU8TV7Js7TN2Ef01vri6iA?dl=0&e=2&preview=Lista+09+CodingBat.py&rlkey=v05xowjtnc0wxdfu5i5we694x
 '''
 
-#!/usr/bin/python -tt
+
+# !/usr/bin/python -tt
 # Exercícios by Nick Parlante (CodingBat)
 
 # A. first_last6
@@ -11,11 +12,12 @@ https://www.dropbox.com/scl/fo/qbhx4eko9oq86qoxoojco/ALU8TV7Js7TN2Ef01vri6iA?dl=
 # first_last6([1, 2, 6]) -> True
 # first_last6([6, 1, 2, 3]) -> True
 # first_last6([3, 2, 1]) -> False
-def first_last6(nums): #
+def first_last6(nums):  #
     if nums[0] == 6 or nums[-1] == 6:
         return True
     else:
         return False
+
 
 # B. same_first_last #
 # retorna True se a lista nums
@@ -29,9 +31,11 @@ def same_first_last(nums):
     if len(nums) >= 1 and nums[0] == nums[-1]:
         return True
     else:
-        return False 
+        return False
 
-# C. common_end #
+    # C. common_end #
+
+
 # Dada duas listas a e b verifica se os dois primeiros são
 # iguais ou os dois últimos são iguais, isto significa
 # o primeiro da lista a igual ao primeiro da lista b
@@ -45,6 +49,7 @@ def common_end(a, b):
         return True
     else:
         return False
+
 
 # D. maior_ponta #
 # Dada uma lista não vazia, cria uma nova lista onde todos
@@ -61,16 +66,19 @@ def maior_ponta(nums):
         n += 1
     return nums
 
+
 # E. sum2 #
 # Dada uma lista de inteiros de qualquer tamanho
 # retorna a soma dos dois primeiros elementos
 # se a lista tiver menos de dois elementos, soma o que for possível
 def sum2(nums):
     if len(nums) >= 2:
-        soma = nums[0] + nums[1]
+        return nums[0] + nums[1]
+    elif len(nums) == 1:
+        return nums[0]
     else:
-        soma = nums[0]
-    return soma
+        return 0
+
 
 # F. middle_way #
 # sejam duas listas de inteiros a e b
@@ -80,7 +88,9 @@ def sum2(nums):
 # middle_way([7, 7, 7], [3, 8, 0]) -> [7, 8]
 # middle_way([5, 2, 9], [1, 4, 5]) -> [2, 4]
 def middle_way(a, b):
-  return 
+    lista = [a[len(a)//2], b[len(b)//2]]
+    return lista
+
 
 # G. date_fashion
 # você e sua namorada(o) vão a um restaurante
@@ -97,7 +107,13 @@ def middle_way(a, b):
 # date_fashion(5, 2) -> 0
 # date_fashion(5, 5) -> 1
 def date_fashion(eu, par):
-  return
+    if eu <= 2 or par <= 2:
+        return 0
+    elif eu >= 8 or par >= 8:
+        return 2
+    else:
+        return 1
+
 
 # H. squirrel_play
 # os esquilos na FATEC brincam quando a temperatura está entre 60 e 90
@@ -108,7 +124,13 @@ def date_fashion(eu, par):
 # squirrel_play(95, False) -> False
 # squirrel_play(95, True) -> True
 def squirrel_play(temp, is_summer):
-  return
+    if 60 <= temp <= 90 and is_summer is False:
+        return True
+    elif 60 <= temp <= 100 and is_summer is True:
+        return True
+    else:
+        return False
+
 
 # I. pego_correndo
 # você foi pego correndo
@@ -122,9 +144,12 @@ def squirrel_play(temp, is_summer):
 # caso seja seu aniversário a velocidade pode ser 5 km/h maior em todos os casos
 # pego_correndo(60, False) -> 0
 # pego_correndo(65, False) -> 1
-# pego_correndo(65, True) -> 0 
+# pego_correndo(65, True) -> 0
 def pego_correndo(speed, is_birthday):
-  return
+    if speed <= 60 and is_birthday is False or speed <= 65 and is_birthday is True: return 0
+    elif 61 <= speed <= 80 and is_birthday is False or 66 <= speed <= 85 and is_birthday is True: return 1
+    else: return 2
+
 
 # J. alarm_clock #
 # day: 0=domingo, 1=segunda, 2=terça, ..., 6=sábado
@@ -139,7 +164,14 @@ def pego_correndo(speed, is_birthday):
 # alarm_clock(5, False) -> '7:00'
 # alarm_clock(0, False) -> '10:00'
 def alarm_clock(day, vacation):
-  return
+    smn = [1, 2, 3, 4, 5]
+    if day in smn and vacation is False:
+        return '7:00'
+    elif day not in smn and vacation is False or day in smn and vacation is True:
+        return '10:00'
+    else:
+        return 'off'
+
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
@@ -148,124 +180,126 @@ def test(obtido, esperado):
         prefixo = ' Parabéns!'
     else:
         prefixo = ' Ainda não'
-    print ('%s obtido: %s esperado: %s'
- % (prefixo, repr(obtido), repr(esperado)))
+    print('%s obtido: %s esperado: %s'
+          % (prefixo, repr(obtido), repr(esperado)))
+
 
 def main():
-  print ('First_last6')
-  test(first_last6([1, 2, 6]), True)
-  test(first_last6([6, 1, 2, 3]), True)
-  test(first_last6([3, 2, 1]), False)
-  test(first_last6([3, 6, 1]), False)
-  test(first_last6([3, 6]), True)
-  test(first_last6([6]), True)
-  test(first_last6([3]), False)
+    print('First_last6')
+    test(first_last6([1, 2, 6]), True)
+    test(first_last6([6, 1, 2, 3]), True)
+    test(first_last6([3, 2, 1]), False)
+    test(first_last6([3, 6, 1]), False)
+    test(first_last6([3, 6]), True)
+    test(first_last6([6]), True)
+    test(first_last6([3]), False)
 
-  print ()
-  print ('Same_first_last')
-  test(same_first_last([1, 2, 3]), False)
-  test(same_first_last([1, 2, 3, 1]), True)
-  test(same_first_last([1, 2, 1]), True)
-  test(same_first_last([7]), True)
-  test(same_first_last([]), False)
-  test(same_first_last([7, 7]), True)
+    print()
+    print('Same_first_last')
+    test(same_first_last([1, 2, 3]), False)
+    test(same_first_last([1, 2, 3, 1]), True)
+    test(same_first_last([1, 2, 1]), True)
+    test(same_first_last([7]), True)
+    test(same_first_last([]), False)
+    test(same_first_last([7, 7]), True)
 
-  print ()
-  print ('Common_end')
-  test(common_end([1, 2, 3], [7, 3]), True)
-  test(common_end([1, 2, 3], [7, 3, 2]), False)
-  test(common_end([1, 2, 3], [1, 3]), True)
-  test(common_end([1, 2, 3], [1]), True)
-  test(common_end([1, 2, 3], [2]), False)
+    print()
+    print('Common_end')
+    test(common_end([1, 2, 3], [7, 3]), True)
+    test(common_end([1, 2, 3], [7, 3, 2]), False)
+    test(common_end([1, 2, 3], [1, 3]), True)
+    test(common_end([1, 2, 3], [1]), True)
+    test(common_end([1, 2, 3], [2]), False)
 
-  print ()
-  print ('Maior_ponta')
-  test(maior_ponta([1, 2, 3]), [3, 3, 3])
-  test(maior_ponta([11, 5, 9]), [11, 11, 11])
-  test(maior_ponta([2, 11, 3]), [3, 3, 3])
-  test(maior_ponta([11, 3, 3]), [11, 11, 11])
-  test(maior_ponta([3, 11, 11]), [11, 11, 11])
-  test(maior_ponta([2, 2, 2]), [2, 2, 2])
-  test(maior_ponta([2, 11, 2]), [2, 2, 2])
-  test(maior_ponta([0, 0, 1]), [1, 1, 1])
-  
-  print ()
-  print ('sum2')
-  test(sum2([1, 2, 3]), 3)
-  test(sum2([1, 1]), 2)
-  test(sum2([1, 1, 1, 1]), 2)
-  test(sum2([1, 2]), 3)
-  test(sum2([1]), 1)
-  test(sum2([]), 0)
-  test(sum2([4, 5, 6]), 9)
-  test(sum2([4]), 4)
+    print()
+    print('Maior_ponta')
+    test(maior_ponta([1, 2, 3]), [3, 3, 3])
+    test(maior_ponta([11, 5, 9]), [11, 11, 11])
+    test(maior_ponta([2, 11, 3]), [3, 3, 3])
+    test(maior_ponta([11, 3, 3]), [11, 11, 11])
+    test(maior_ponta([3, 11, 11]), [11, 11, 11])
+    test(maior_ponta([2, 2, 2]), [2, 2, 2])
+    test(maior_ponta([2, 11, 2]), [2, 2, 2])
+    test(maior_ponta([0, 0, 1]), [1, 1, 1])
 
-  print ()
-  print ('middle_way')
-  test(middle_way([1, 2, 3], [4, 5, 6]), [2, 5])
-  test(middle_way([7, 7, 7], [3, 8, 0]), [7, 8])
-  test(middle_way([5, 2, 9], [1, 4, 5]), [2, 4])
-  test(middle_way([1, 9, 7], [4, 8, 8]), [9, 8])
-  test(middle_way([1, 2, 3], [3, 1, 4]), [2, 1])
-  test(middle_way([1, 2, 3], [4, 1, 1]), [2, 1])
-       
-  print ()
-  print ('date fashion')
-  test(date_fashion(5, 10), 2)
-  test(date_fashion(5, 2), 0)
-  test(date_fashion(5, 5), 1)
-  test(date_fashion(3, 3), 1)
-  test(date_fashion(10, 2), 0)
-  test(date_fashion(2, 9), 0)
-  test(date_fashion(9, 9), 2)
-  test(date_fashion(10, 5), 2)
-  test(date_fashion(2, 2), 0)
-  test(date_fashion(3, 7), 1)
-  test(date_fashion(2, 7), 0)
-  test(date_fashion(6, 2), 0)
+    print()
+    print('sum2')
+    test(sum2([1, 2, 3]), 3)
+    test(sum2([1, 1]), 2)
+    test(sum2([1, 1, 1, 1]), 2)
+    test(sum2([1, 2]), 3)
+    test(sum2([1]), 1)
+    test(sum2([]), 0)
+    test(sum2([4, 5, 6]), 9)
+    test(sum2([4]), 4)
 
-  print ()
-  print ('squirrel_play')
-  test(squirrel_play(70, False), True)
-  test(squirrel_play(95, False), False)
-  test(squirrel_play(95, True), True)
-  test(squirrel_play(90, False), True)
-  test(squirrel_play(90, True), True)
-  test(squirrel_play(50, False), False)
-  test(squirrel_play(50, True), False)
-  test(squirrel_play(100, False), False)
-  test(squirrel_play(100, True), True)
-  test(squirrel_play(105, True), False)
-  test(squirrel_play(59, False), False)	
-  test(squirrel_play(59, True), False)	
-  test(squirrel_play(60, False), True)
+    print()
+    print('middle_way')
+    test(middle_way([1, 2, 3], [4, 5, 6]), [2, 5])
+    test(middle_way([7, 7, 7], [3, 8, 0]), [7, 8])
+    test(middle_way([5, 2, 9], [1, 4, 5]), [2, 4])
+    test(middle_way([1, 9, 7], [4, 8, 8]), [9, 8])
+    test(middle_way([1, 2, 3], [3, 1, 4]), [2, 1])
+    test(middle_way([1, 2, 3], [4, 1, 1]), [2, 1])
 
-  print ()
-  print ('Pego correndo')
-  test(pego_correndo(60, False), 0)
-  test(pego_correndo(65, False), 1)
-  test(pego_correndo(65, True), 0)
-  test(pego_correndo(80, False), 1)
-  test(pego_correndo(85, False), 2)
-  test(pego_correndo(85, True), 1)
-  test(pego_correndo(70, False), 1)
-  test(pego_correndo(75, False), 1)
-  test(pego_correndo(75, True), 1)
-  test(pego_correndo(40, False), 0)
-  test(pego_correndo(40, True), 0)
-  test(pego_correndo(90, False), 2)
+    print()
+    print('date fashion')
+    test(date_fashion(5, 10), 2)
+    test(date_fashion(5, 2), 0)
+    test(date_fashion(5, 5), 1)
+    test(date_fashion(3, 3), 1)
+    test(date_fashion(10, 2), 0)
+    test(date_fashion(2, 9), 0)
+    test(date_fashion(9, 9), 2)
+    test(date_fashion(10, 5), 2)
+    test(date_fashion(2, 2), 0)
+    test(date_fashion(3, 7), 1)
+    test(date_fashion(2, 7), 0)
+    test(date_fashion(6, 2), 0)
 
-  print ()
-  print ('Alarm Clock')
-  test(alarm_clock(1, False), '7:00')
-  test(alarm_clock(5, False), '7:00')
-  test(alarm_clock(0, False), '10:00')
-  test(alarm_clock(6, False), '10:00')
-  test(alarm_clock(0, True), 'off')
-  test(alarm_clock(6, True), 'off')
-  test(alarm_clock(1, True), '10:00')
-  test(alarm_clock(3, True), '10:00')
-  test(alarm_clock(5, True), '10:00')
+    print()
+    print('squirrel_play')
+    test(squirrel_play(70, False), True)
+    test(squirrel_play(95, False), False)
+    test(squirrel_play(95, True), True)
+    test(squirrel_play(90, False), True)
+    test(squirrel_play(90, True), True)
+    test(squirrel_play(50, False), False)
+    test(squirrel_play(50, True), False)
+    test(squirrel_play(100, False), False)
+    test(squirrel_play(100, True), True)
+    test(squirrel_play(105, True), False)
+    test(squirrel_play(59, False), False)
+    test(squirrel_play(59, True), False)
+    test(squirrel_play(60, False), True)
+
+    print()
+    print('Pego correndo')
+    test(pego_correndo(60, False), 0)
+    test(pego_correndo(65, False), 1)
+    test(pego_correndo(65, True), 0)
+    test(pego_correndo(80, False), 1)
+    test(pego_correndo(85, False), 2)
+    test(pego_correndo(85, True), 1)
+    test(pego_correndo(70, False), 1)
+    test(pego_correndo(75, False), 1)
+    test(pego_correndo(75, True), 1)
+    test(pego_correndo(40, False), 0)
+    test(pego_correndo(40, True), 0)
+    test(pego_correndo(90, False), 2)
+
+    print()
+    print('Alarm Clock')
+    test(alarm_clock(1, False), '7:00')
+    test(alarm_clock(5, False), '7:00')
+    test(alarm_clock(0, False), '10:00')
+    test(alarm_clock(6, False), '10:00')
+    test(alarm_clock(0, True), 'off')
+    test(alarm_clock(6, True), 'off')
+    test(alarm_clock(1, True), '10:00')
+    test(alarm_clock(3, True), '10:00')
+    test(alarm_clock(5, True), '10:00')
+
 
 if __name__ == '__main__':
-  main()
+    main()

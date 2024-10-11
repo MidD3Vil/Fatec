@@ -14,8 +14,11 @@ https://www.dropbox.com/scl/fo/qbhx4eko9oq86qoxoojco/ALU8TV7Js7TN2Ef01vri6iA?dl=
 # near_ten(17) -> False
 # near_ten(19) -> True
 def near_ten(n):
-  return 
-
+    if n % 10 >= 8 or n % 10 <= 2:
+        return True
+    else:
+        return False
+    
 # B. lone_sum
 # Soma maluca: some os números inteiros a, b, e c
 # Se algum número aparecer repetido ele não conta na soma
@@ -23,7 +26,11 @@ def near_ten(n):
 # lone_sum(3, 2, 3) -> 2
 # lone_sum(3, 3, 3) -> 0
 def lone_sum(a, b, c):
-  return
+    if a == b: return c
+    elif a == c: return b
+    elif b == c: return a
+    elif a == b == c: return 0
+    else: return a+b+c
     
 # C. luck_sum #
 # Soma três inteiros a, b, c
@@ -33,7 +40,10 @@ def lone_sum(a, b, c):
 # lucky_sum(1, 2, 13) -> 3
 # lucky_sum(1, 13, 3) -> 1
 def lucky_sum(a, b, c):
-  return
+    if a == 13: return 0
+    elif b == 13: return a
+    elif c == 13: return a+b
+    else: return a+b+c
 
 # D. double_char #
 # retorna os caracteres da string original duplicados
@@ -41,15 +51,19 @@ def lucky_sum(a, b, c):
 # double_char('AAbb') -> 'AAAAbbbb'
 # double_char('Hi-There') -> 'HHii--TThheerree'
 def double_char(s):
-  return
-
+    count, text = 0, []
+    for element in range(len(s)):
+        text.append(s[count]*2)
+        count += 1
+    return ''.join(text)
+    
 # E. count_hi #
 # conta o número de vezes que aparece a string 'hi'
 # count_hi('abc hi ho') -> 1
 # count_hi('ABChi hi') -> 2
 # count_hi('hihi') -> 2
 def count_hi(s):
-  return 
+  return s.count('hi')
 
 # F. cat_dog #
 # verifica se o aparece o mesmo número de vezes 'cat' e 'dog'
@@ -57,7 +71,8 @@ def count_hi(s):
 # cat_dog('catcat') -> False
 # cat_dog('1cat1cadodog') -> True
 def cat_dog(s):
-  return
+    if s.count('dog') == s.count('cat'): return True
+    else: return False
 
 # G. count_code #
 # conta quantas vezes aparece 'code'
@@ -67,7 +82,7 @@ def cat_dog(s):
 # count_code('codexxcode') -> 2
 # count_code('cozexxcope') -> 2
 def count_code(s):
-  return 
+     alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 # H. end_other #
 # as duas strings devem ser convertidas para minúsculo via lower()
@@ -336,4 +351,3 @@ def main():
 
 if __name__ == '__main__':
   main()
-  

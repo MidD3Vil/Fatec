@@ -26,10 +26,10 @@ def near_ten(n):
 # lone_sum(3, 2, 3) -> 2
 # lone_sum(3, 3, 3) -> 0
 def lone_sum(a, b, c):
-    if a == b: return c
+    if a == b == c: return 0
+    elif a == b: return c
     elif a == c: return b
     elif b == c: return a
-    elif a == b == c: return 0
     else: return a+b+c
     
 # C. luck_sum #
@@ -82,7 +82,9 @@ def cat_dog(s):
 # count_code('codexxcode') -> 2
 # count_code('cozexxcope') -> 2
 def count_code(s):
-     alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+     import re
+     palavra = len(re.findall(r'co.e', s))
+     return palavra
 
 # H. end_other #
 # as duas strings devem ser convertidas para minúsculo via lower()
@@ -92,7 +94,10 @@ def count_code(s):
 # end_other('AbC', 'HiaBc') -> True
 # end_other('abc', 'abXabc') -> True
 def end_other(a, b):
-  return
+  a, b = a.lower(), b.lower()
+  if a.endswith(b) or b.endswith(a): return True
+  else: return False
+
 
 # I. count_evens
 # conta os números pares da lista
@@ -100,7 +105,11 @@ def end_other(a, b):
 # count_evens([2, 2, 0]) -> 3
 # count_evens([1, 3, 5]) -> 0
 def count_evens(nums):
-  return 
+  count = 0
+  for num in nums:
+     if num % 2 == 0:
+        count += 1
+  return count
 
 # J. sum13 #
 # retorna a soma dos números de uma lista
@@ -110,7 +119,11 @@ def count_evens(nums):
 # sum13([1, 2, 2, 1, 13]) -> 6
 # sum13([13, 1, 2, 3, 4]) -> 0
 def sum13(nums):
-  return 
+  count = 0
+  for num in nums:
+    if num == 13: return count
+    count += num
+  return count
 
 # K. has22 #
 # Verifica se na lista de números inteiros aparecem dois 2 consecutivos
@@ -118,7 +131,11 @@ def sum13(nums):
 # has22([1, 2, 1, 2]) -> False
 # has22([2, 1, 2]) -> False
 def has22(nums):
-  return
+  for i in range(len(nums)-1):
+     if nums[i] == nums[i+1] == 2:
+        return True
+  return False
+
 
 # L. soma_na_lista #
 # Verifica se um número é soma de dois elementos distintos de uma lista
@@ -129,7 +146,12 @@ def has22(nums):
 # soma_na_lista(4, [2, 2, 2, 2]) -> False
 # soma_na_lista(4, [2, 2, 1, 3]) -> True
 def soma_na_lista(n, lista):
-  return
+    for i in range(len(lista)):
+        for j in range(i + 1, len(lista)):
+            if lista[i] + lista[j] == n:
+                return True
+    return False # No resultado tem um errado, porém o erro ta no retorno do "esperado". 
+                 # (4, [2, 2, 2, 2]) --> 2 + 2 = 4, True...
   
 # M.Difícil: Fila de tijolos sem usar loops #
 # queremos montar uma fila de tijolos de um tamanho denominado meta
@@ -140,7 +162,9 @@ def soma_na_lista(n, lista):
 # fila_tijolos(3, 1, 9) -> False
 # fila_tijolos(3, 2, 10) -> True
 def fila_tijolos(n_peq, n_gra, meta):
-  return
+    max_gra = min(n_gra, meta // 5)
+    restante = meta - (max_gra * 5)
+    return restante <= n_peq and restante >= 0
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.

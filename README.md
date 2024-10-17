@@ -12,11 +12,15 @@
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" height="20"> **JavaScript** - Funcionalidade e interatividade
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" height="20"> **Python** - Projetos beckend
+<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" height="20"> **Python** - Projetos backend
 
 ### Cursos
 - **PC Hardware and Software**
 - **NDG Linux**
+
+### Frameworks
+- **Bootstrap**
+- **Tailwind**
 
 ## Instalação
 

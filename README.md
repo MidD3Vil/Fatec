@@ -21,6 +21,7 @@
 ### Frameworks
 - **Bootstrap**
 - **Tailwind**
+- **Microframework:** Python Flask
 
 ## Instalação
 

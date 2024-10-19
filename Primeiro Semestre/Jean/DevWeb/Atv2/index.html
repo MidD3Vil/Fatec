@@ -4,16 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>OmegaTech Hub</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.avif'); /* Substitua 'seu-gif.gif' pelo caminho do seu GIF */
+    background-size: cover; /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
+    background-repeat: no-repeat; /* Evita que o GIF se repita */ }
+    </style>
 </head>
 
 <body>
-    <!--==================== Nav Bar ====================-->
-    <nav>
+    <!--==/==/==/==/==/==/==/==/= Header / NavBar =/==/==/==/==/==/==/==/==-->
+    <header>
+        <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+            <div class="container-fluid col-11 m-auto">
+            <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/logo.webp" alt="logo" style="width: 30px; height: 30px; justify-content: left;">
+            <a class="navbar-brand" href="#">&nbsp;&nbsp;OmegaTech Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+    <!--==/==/==/==/==/==/==/==/= Carrousel =/==/==/==/==/==/==/==/==-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/40-Boxnet-O-futuro-da-analise-de-dados.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Conectividade</h5>
+              <p>Somos uma empresa focada na interação entre os usuários.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/ti.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Praticidade</h5>
+              <p>A tecnologia na palma da sua mão.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/Tendencias-de-tecnologia-2023-Capa.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Modernidade</h5>
+              <p>Atendimento melhorado com Inteligência Artificial de ponta.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+
+    <!--==/==/==/==/==/==/==/==/= Card =/==/==/==/==/==/==/==/==-->
+    <div class="card text-center text-white bg-dark mb-3 col-11 m-auto">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title ">Estamos prontos para transformar suas ideias em realidade.</h5>
+          <p class="card-text">Está pronto para levar sua empresa para o próximo nível? Entre em contato com a nossa equipe e descubra como podemos ajudar você.</p>
+          <a href="#" class="btn btn-danger">Fale Conosco</a>
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+      </div>
+      <br><br>
+
+    <!--==/==/==/==/==/==/==/==/= Main / Content =/==/==/==/==/==/==/==/==-->
+    <main class="card text-center text-white bg-dark mb-3 col-11 m-auto">
+        <hr><br>
+        <h2 class="col-10 m-auto">Inovação Digital ao seu Alcance</h2>
+        <br>
+        <p class="col-10 m-auto">No <b>OmegaTech Hub</b>, transformamos ideias em realidade. Nossa equipe de especialistas está pronta para fornecer as melhores soluções em tecnologia para o seu negócio. Seja para melhorar a eficiência, aumentar a segurança ou criar algo totalmente novo, estamos aqui para ajudar você a alcançar seus objetivos.</p>
+        <br><hr><br>
         
-    </nav>
+        <h2 class="col-10 m-auto">Propósito</h2>
+        <br>
+        <p class="col-10 m-auto">O OmegaTech Hub é uma plataforma que oferece soluções tecnológicas avançadas e consultoria especializada para empresas e indivíduos que buscam inovação. A proposta é conectar profissionais da tecnologia a empresas que precisam de suporte em desenvolvimento de software, gestão de TI, segurança digital e transformação digital.</p>
+        <br><hr>
+    </main>
+
+    <!--==/==/==/==/==/==/==/==/= Footer =/==/==/==/==/==/==/==/==-->
+    <br>
+    <footer class="bg-dark text-white text-center text-lg-start mt-auto">
+        <div class="container p-4">
+          <!-- Redes Sociais -->
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Contato</h5>
+              <p><i class="fas fa-phone-alt"></i> +55 11 99999-9999</p>
+              <p><i class="fas fa-envelope"></i> contato@seudominio.com</p>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Siga-nos</h5>
+              <a href="https://wa.me/5511999999999" class="text-white me-4">
+                <i class="fab fa-whatsapp fa-2x"></i>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              </a>
+              <a href="https://facebook.com" class="text-white me-4">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a href="https://instagram.com" class="text-white me-4">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://twitter.com" class="text-white me-4">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Endereço</h5>
+              <p>Av. Paulista, 1000<br>São Paulo, SP, Brasil</p>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Horário de Atendimento</h5>
+              <p>Segunda a Sexta: 9h - 18h<br>Sábado: 9h - 12h</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 Copyright:
+          <a class="text-white" href="https://seudominio.com/">SeuSite.com</a>
+        </div>
+    </footer>
 </body>
 
 </html>

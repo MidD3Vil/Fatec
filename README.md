@@ -28,6 +28,13 @@
 - **GitHub** - Upload de Projetos
 - **Jira & Notion** - Gerenciamento de Tasks
 
+### Ferramentas
+- **Packet Tracer** - Hardware Aplicado
+
+## Certificados
+- **Python** - https://www.cursoemvideo.com/
+- **Linux** - https://www.netacad.com/pt/
+
 ## Instalação
 
 Para instalar o projeto localmente, siga os passos abaixo:

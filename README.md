@@ -23,6 +23,11 @@
 - **Tailwind**
 - **Microframework:** Python Flask
 
+### Plataformas
+- **Figma** - Ferramenta de Design
+- **GitHub** - Upload de Projetos
+- **Jira & Notion** - Gerenciamento de Tasks
+
 ## Instalação
 
 Para instalar o projeto localmente, siga os passos abaixo:

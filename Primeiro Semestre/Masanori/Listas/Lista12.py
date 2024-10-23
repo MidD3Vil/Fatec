@@ -67,7 +67,10 @@ def zf(n):
 # Verifique quantas vezes o dígito 2 aparece entre 0 e n-1
 # Exemplo: para n = 20 o dígito 2 aparece duas vezes entre 0 e 19
 def conta2(n):
-    return
+    contagem = 0
+    for i in range(0, n-1):
+        contagem += str(i).count('2')
+    return contagem
 
 # L. inicio em potencia de 2
 # Dado um número inteiro positivo n retorne a primeira potência de 2

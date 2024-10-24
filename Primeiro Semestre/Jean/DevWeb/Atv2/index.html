@@ -6,27 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"
     <title>OmegaTech Hub</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('img/background.avif'); /* Substitua 'seu-gif.gif' pelo caminho do seu GIF */
-    background-size: cover; /* Faz o GIF cobrir toda a tela */
-    background-position: center; /* Centraliza o GIF */
-    background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
-    background-repeat: no-repeat; /* Evita que o GIF se repita */ }
-    
-        b {
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
-            background-color: slategrey;
         
-        .sombra {
-            box-shadow: 0 4px 5px 20px white;
-        }
     </style>
 </head>
 
@@ -115,7 +98,7 @@
     <br><br>
 
     <!--==/==/==/==/==/==/==/==/= Card =/==/==/==/==/==/==/==/==-->
-    <div class="card text-center text-white bg-dark mb-3 col-11 m-auto">
+    <div class="sombra card text-center text-white bg-dark mb-3 col-11 m-auto">
         <div class="card-header">
         </div>
         <div class="card-body">
@@ -129,7 +112,7 @@
       <br><br>
 
     <!--==/==/==/==/==/==/==/==/= Main / Content =/==/==/==/==/==/==/==/==-->
-    <main class="card text-center text-white bg-dark mb-3 col-11 m-auto">
+    <main class="sombra card text-center text-white bg-dark mb-3 col-11 m-auto">
         <hr><br>
         <h2 class="col-10 m-auto">Inovação Digital ao seu Alcance</h2>
         <br>
@@ -144,30 +127,30 @@
     <br><br>
     
     <!--==/==/==/==/==/==/==/==/= Sobre =/==/==/==/==/==/==/==/==-->
-    <div class="sombra">
+    <div>
         <div class="row" style="justify-content: space-evenly">
-            <div class="card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
+            <div class=" sombra card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
                 <br>
                 <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/sobre/desenvolvimento-personalizado.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="font-size: 16px"><b>Desenvolvimento de Software:</b><br><br>Construímos aplicativos, plataformas e sistemas que se ajustam perfeitamente às suas necessidades.</p>
                 </div>
             </div>
-            <div class="card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
+            <div class="sombra card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
                 <br>
                 <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/sobre/consultoria-TI.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="font-size: 16px"><b>Consultoria em TI:</b><br><br>Ajudamos sua empresa a implementar soluções de tecnologia eficientes e de ponta.</p>
                 </div>
             </div>
-            <div class="card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
+            <div class="sombra card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
                 <br>
                 <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/sobre/seguranca-informacao.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text" style="font-size: 16px"><b>Segurança da Informação:</b><br><br>Protegemos os dados da sua empresa contra ameaças digitais e ataques cibernéticos.</p>
                 </div>
             </div>
-            <div class="card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
+            <div class="sombra card text-white bg-secondary col-3 mx-2 m-auto" style="width: 14rem;">
                 <br>
                 <img src="/Primeiro Semestre/Jean/DevWeb/Atv2/img/sobre/transformacao-digital.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -177,6 +160,27 @@
         </div>
     </div>
     <br><br>
+
+    <!--==/==/==/==/==/==/==/==/= Formulário / Contato =/==/==/==/==/==/==/==/==-->
+    <br>
+    <form class="bg-gradient bg-dark col-11 m-auto text-white border border-sucess" data-bs-theme="dark">
+        <br>
+        <div class="mb-3 col-8 m-auto">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3 col-8 m-auto">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 col-8 m-auto form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
 
     <!--==/==/==/==/==/==/==/==/= Footer =/==/==/==/==/==/==/==/==-->
     <br>

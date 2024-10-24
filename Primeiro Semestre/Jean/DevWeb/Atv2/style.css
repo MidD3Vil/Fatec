@@ -1,1 +1,23 @@
-/* Tive problemas ao usar o bootstrap e o CSS juntos, então defini as classes no próprio HTML /*
+/* Tive problemas ao usar o bootstrap e o CSS juntos, então defini as classes no próprio HTML */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.avif'); /* Substitua 'seu-gif.gif' pelo caminho do seu GIF */
+    background-size: cover; /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
+    background-repeat: no-repeat; /* Evita que o GIF se repita */ 
+}
+    
+b {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: slategrey;
+}
+
+.sombra {
+    box-shadow: 0 4px 5px 2px white;
+}

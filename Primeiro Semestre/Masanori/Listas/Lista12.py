@@ -77,8 +77,17 @@ def conta2(n):
 # que tenha o início igual a n
 # Exemplo: para n = 65 retornará 16 pois 2**16 = 65536
 def inip2(n):
-    return
+    n_str = str(n)
+    potencia = 0
 
+    while True:
+        potencia_atual = 2 ** potencia
+        potencia_str = str(potencia_atual)
+        
+        if potencia_str.startswith(n_str):
+            return potencia 
+        potencia += 1
+    
 def test(obtido, esperado):
     if obtido == esperado:
         prefixo = ' Parabéns!'

@@ -17,7 +17,7 @@ https://www.dropbox.com/scl/fo/qbhx4eko9oq86qoxoojco/ALU8TV7Js7TN2Ef01vri6iA?dl=
 # PS: se você usar o comando set deve ficar ordenado
 # como aparece no resultado dos testes
 def remove_iguais(nums):
-    return
+    return list(set(nums))
 
 # E. Cripto desafio!!
 # Dada uma frase, você deve retirar todas as letras repetidas das palavras
@@ -27,7 +27,14 @@ def remove_iguais(nums):
 # depois tente ordenar as letras e montar uma string com o resultado.
 # Utilize listas auxiliares se facilitar
 def cripto(frase):
-    return 
+    resultado = []
+    for i in frase.split():
+
+        letras_unicas = sorted(set(i)) 
+        palavra_resultado = ''.join(letras_unicas)
+        resultado.append(palavra_resultado)
+    return ' '.join(resultado)
+
 
 # F. Derivada de um polinômio
 # Os coeficientes de um polinômio estão numa lista na ordem do seu grau.
@@ -55,7 +62,7 @@ def soma(n1, n2):
 def anagrama(s1, s2):
     for x in s1:
         if x not in s2:
-      return False
+            return False
     i1 = 0
     i2 = 0
     for x in s1:

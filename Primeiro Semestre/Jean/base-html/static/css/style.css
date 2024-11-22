@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(233, 241, 241);
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imgcapa {
+    display: flex;
+    justify-content: center;
+}
+
+.capa {
+    width: 100%;
+    padding-top: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

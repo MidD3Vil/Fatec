@@ -8,7 +8,9 @@ Unlike those more established engineering professions, current software engineer
 
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 >>> Com este texto é possível identificar que existe diferenças entre os conceitos de "Programação" e "Engenharia de Software",  o primeiro se trata do estudo aplicado ao escrever códigos, sendo nomeado "programador" - o indivíduo que exerce a função. Por outro lado, o chamado "engenheiro de software" é quem utiliza do conhecimento teórico para construir algo mais "real e preciso", trazendo uma perspectiva mais séria e, novamente, "real".
+
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 

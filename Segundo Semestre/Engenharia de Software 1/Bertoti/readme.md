@@ -41,10 +41,9 @@ How an organization makes decisions, based on the lessons of Time and Change and
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
 3)
 >> Alguns exemplos de Trade-off:
+
 > Escoha de uma lang de baixo nível - aumentando a dificuldade no coding e manutenção em benefício da velocidade. (citado anteriormente)
 > Espaçamento de hardware mais compacto gerando maiores custos de produção e pesquisa e aumentando o desempenho em uma placa de mesmo tamanho.
 > Maiores investimentos financeiros em determinado projeto, tanto na equipe de funcionários, como nas ferramentas necessárias. Maiores valores agregados de custo e tempo em troca de um serviço mais completo e com menores probabilidades de erros futuros.

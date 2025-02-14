@@ -10,7 +10,7 @@ Unlike those more established engineering professions, current software engineer
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 1)
->> Com este texto é possível identificar que existe diferenças entre os conceitos de "Programação" e "Engenharia de Software",  o primeiro se trata do estudo aplicado ao escrever códigos, sendo nomeado "programador" - o indivíduo que exerce a função. Por outro lado, o chamado "engenheiro de software" é quem utiliza do conhecimento teórico para construir algo mais "real e preciso", trazendo uma perspectiva mais séria e, novamente, "real".
+> Com este texto é possível identificar que existe diferenças entre os conceitos de "Programação" e "Engenharia de Software",  o primeiro se trata do estudo aplicado ao escrever códigos, sendo nomeado "programador" - o indivíduo que exerce a função. Por outro lado, o chamado "engenheiro de software" é quem utiliza do conhecimento teórico para construir algo mais "real e preciso", trazendo uma perspectiva mais séria e, novamente, "real".
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -36,15 +36,17 @@ How an organization makes decisions, based on the lessons of Time and Change and
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 2)
->> Neste segundo trecho é citado três princípios fundamentais para melhor organizar um código na hora de escrevê-lo, princípios que foram implementados pela equipe do google durante 2 décadas. Um dos citados, foi o conceito de "Trade-off", que seria a compensação que determinadas decisões pode ocasionar no serviço final; exemplo: Escoha de uma lang de baixo nível - aumentando a dificuldade no coding e manutenção em benefício da velocidade.
+> Neste segundo trecho é citado três princípios fundamentais para melhor organizar um código na hora de escrevê-lo, princípios que foram implementados pela equipe do google durante 2 décadas. Um dos citados, foi o conceito de "Trade-off", que seria a compensação que determinadas decisões pode ocasionar no serviço final; exemplo: Escoha de uma lang de baixo nível - aumentando a dificuldade no coding e manutenção em benefício da velocidade.
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
 3)
->> Alguns exemplos de Trade-off:
-- Escoha de uma lang de baixo nível - aumentando a dificuldade no coding e manutenção em benefício da velocidade. (citado anteriormente)
-- Espaçamento de hardware mais compacto gerando maiores custos de produção e pesquisa e aumentando o desempenho em uma placa de mesmo tamanho.
-- Maiores investimentos financeiros em determinado projeto, tanto na equipe de funcionários, como nas ferramentas necessárias. Maiores valores agregados de custo e tempo em troca de um serviço mais completo e com menores probabilidades de erros futuros.
+
+Alguns exemplos de Trade-off:
+
+> - Escoha de uma lang de baixo nível - aumentando a dificuldade no coding e manutenção em benefício da velocidade. (citado anteriormente)
+> - Espaçamento de hardware mais compacto gerando maiores custos de produção e pesquisa e aumentando o desempenho em uma placa de mesmo tamanho.
+> - Maiores investimentos financeiros em determinado projeto, tanto na equipe de funcionários, como nas ferramentas necessárias. Maiores valores agregados de custo e tempo em troca de um serviço mais completo e com menores probabilidades de erros futuros.
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

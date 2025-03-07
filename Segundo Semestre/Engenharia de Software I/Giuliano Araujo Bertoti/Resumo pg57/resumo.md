@@ -1,0 +1,1 @@
+A imagem explica de maneira visual o método MVP - Mínimo Produto Viável - em que a entrega prioritária de cada sprint deve ser sempre o mínimo que atenda a todos os requisitos do cliente e possa ser utilizado... Mesmo que para isso, o produto não esteja 100% otimizado, o que na imagem é representado pelo carro.

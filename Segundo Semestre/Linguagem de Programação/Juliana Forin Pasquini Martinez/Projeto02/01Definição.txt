@@ -1,0 +1,158 @@
+a. Classes:
+Uma classe é um modelo ou estrutura que define um objeto. Ela contém atributos (dados) e métodos (comportamentos).
+
+Exemplo de Classe em Java
+public class Carro {
+    String marca;
+    int ano;
+
+    void exibirInformacoes() {
+        System.out.println("Marca: " + marca + ", Ano: " + ano);
+    }
+}
+
+>>> No exemplo acima, Carro é uma classe que tem dois atributos (marca e ano) e um método (exibirInformacoes).
+
+
+
+
+
+
+b. Objetos:
+Um objeto é uma instância de uma classe, ou seja, uma concretização da estrutura definida pela classe.
+
+Exemplo de Objeto em Java
+public class Main {
+    public static void main(String[] args) {
+        Carro meuCarro = new Carro();  // Criando um objeto da classe Carro
+        meuCarro.marca = "Toyota";
+        meuCarro.ano = 2022;
+        meuCarro.exibirInformacoes();
+    }
+}
+
+>>> Aqui, meuCarro é um objeto da classe Carro.
+
+
+
+
+
+
+c. Atributos:
+Os atributos são variáveis que armazenam os dados do objeto. Eles representam as características do objeto.
+
+Exemplo de Atributos em Java
+No código da classe Carro, os atributos são:
+String marca;
+int ano;
+
+>>> Eles representam a marca e o ano do carro.
+
+
+
+
+
+
+d. Métodos:
+Os métodos representam o comportamento do objeto. Eles são funções que definem ações que podem ser realizadas pela classe.
+
+Exemplo de Método em Java
+void exibirInformacoes() {
+    System.out.println("Marca: " + marca + ", Ano: " + ano);
+}
+
+>>> Esse método exibe as informações do carro.
+
+
+
+
+
+
+e. Encapsulamento:
+O encapsulamento protege os dados do objeto, permitindo que eles sejam acessados apenas por métodos específicos, geralmente usando modificadores como private e métodos getter e setter.
+
+Exemplo de Encapsulamento em Java
+public class Pessoa {
+    private String nome;
+
+    public void setNome(String nome) {  // Método setter
+        this.nome = nome;
+    }
+
+    public String getNome() {  // Método getter
+        return nome;
+    }
+}
+
+>>> Aqui, o atributo nome é privado e só pode ser acessado por meio dos métodos setNome e getNome.
+
+
+
+
+
+
+f. Herança:
+A herança permite que uma classe herde atributos e métodos de outra classe. Em Java, usamos a palavra-chave extends.
+
+Exemplo de Herança em Java
+public class Veiculo {
+    String tipo;
+    
+    void mostrarTipo() {
+        System.out.println("Tipo: " + tipo);
+    }
+}
+
+public class Carro extends Veiculo {
+    String modelo;
+}
+
+>>> Aqui, Carro herda de Veiculo, então um objeto de Carro terá os atributos e métodos de Veiculo.
+
+
+
+
+
+
+g. Polimorfismo:
+O polimorfismo permite que um método tenha diferentes implementações dependendo da classe onde é chamado. Pode ocorrer por sobrecarga (métodos com o mesmo nome, mas parâmetros diferentes) ou sobreposição (subclasses redefinem métodos da superclasse).
+
+Exemplo de Polimorfismo em Java
+1. Sobrecarga de métodos (Overloading):
+public class Calculadora {
+    int soma(int a, int b) {
+        return a + b;
+    }
+
+    double soma(double a, double b) {
+        return a + b;
+    }
+}
+
+>>> O método soma é definido duas vezes, mas com parâmetros diferentes.
+
+2. Sobreposição de métodos (Overriding):
+public class Animal {
+    void fazerSom() {
+        System.out.println("O animal faz um som.");
+    }
+}
+
+public class Cachorro extends Animal {
+    @Override
+    void fazerSom() {
+        System.out.println("O cachorro late.");
+    }
+}
+
+>>> Aqui, Cachorro redefine o método fazerSom() da classe Animal.
+
+
+
+
+
+
+Referências:
+• DEITEL, Paul; DEITEL, Harvey. Java: Como Programar. 10ª ed. Pearson, 2015.
+• Oracle. The Java™ Tutorials. Disponível em: https://docs.oracle.com/javase/tutorial/.
+• HORSTMANN, Cay S. Core Java Volume I – Fundamentals. 11ª ed. Pearson, 2018.
